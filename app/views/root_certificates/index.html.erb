@@ -13,7 +13,7 @@
     <% @root_certificates.each do |root_certificate| %>
       <tr>
         <td><%= link_to "certificado", root_certificate.ca.url(:original, false) %></td>
-        <td><%= link_to "chave_privada", root_certificate.key.url(:original, false) %></td>
+        <td><%= link_to "chave", root_certificate.key.url(:original, false) %></td>
         <td><%= link_to 'Show', root_certificate %></td>
         <td><%= link_to 'Edit', edit_root_certificate_path(root_certificate) %></td>
         <td><%= link_to 'Destroy', root_certificate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
