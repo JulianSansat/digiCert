@@ -1,0 +1,1 @@
+json.array! @root_certificates, partial: 'root_certificates/root_certificate', as: :root_certificate

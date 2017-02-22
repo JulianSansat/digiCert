@@ -1,0 +1,1 @@
+json.partial! "root_certificates/root_certificate", root_certificate: @root_certificate

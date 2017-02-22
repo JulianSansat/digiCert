@@ -1,0 +1,1 @@
+json.partial! "regular_certificates/regular_certificate", regular_certificate: @regular_certificate

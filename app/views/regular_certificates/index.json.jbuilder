@@ -1,0 +1,1 @@
+json.array! @regular_certificates, partial: 'regular_certificates/regular_certificate', as: :regular_certificate

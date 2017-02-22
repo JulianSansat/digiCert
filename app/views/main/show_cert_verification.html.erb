@@ -1,0 +1,7 @@
+<% if @result == true %>
+    <h1>Certificado Verificado</h1>
+    <h3><%= @subject%></h3>
+    <h3>Certificado por: <%= @issuer%></h3>
+<% else %>
+    <h3>Certificado não reconhecido</h3>
+<% end %>

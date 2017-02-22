@@ -1,0 +1,22 @@
+<%= form_for(regular_certificate) do |f| %>
+  <% if regular_certificate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(regular_certificate.errors.count, "error") %> prohibited this regular_certificate from being saved:</h2>
+
+      <ul>
+      <% regular_certificate.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :subject %>
+    <%= f.text_field :subject %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

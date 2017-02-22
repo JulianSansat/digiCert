@@ -1,0 +1,6 @@
+<h2>Verificar Certificado</h2>
+<p>selecionar arquivo.pem</p>
+<%= form_tag('/main/show_cert_verification', multipart: true) do %>
+    <%= file_field(nil, :file)%><br>
+    <%= submit_tag "Verificar Certificado" %>
+<% end %>
